@@ -1,0 +1,66 @@
+body {
+	margin: 0;
+	background-color: black;
+	position: relative;
+}
+
+#container{
+		top: 50%;
+		transform: translatey(-50%);
+		position: absolute;
+		width: 100%;
+}
+
+#Name {
+	font-family: 'Cambay', sans-serif;
+	font-weight: 700;
+	font-style: italic;
+	font-size: 90px;
+	color: #f1d905;
+	/* text-align: center; */
+	/* width: 80%; */
+	/* margin-left: 9%; */
+	text-align: center;
+	line-height: 90px;
+}
+
+#bg-pic img{
+	width: 100%;
+	opacity: 0.20;
+	/* position: fixed; */
+	height: 100%;
+	object-fit: cover;
+}
+
+#bg-pic{
+	height: 100%;
+	/* position: fixed; */
+	/* top: 50%; */
+	/* transform: translateY(-50%); */
+	z-index: -10;
+}
+
+
+#menu{
+	margin: 0 auto;
+	color: #f1d905;
+	font-family: 'Cambay', sans-serif;
+	/* background-color: black; */
+	font-size: 20;
+	text-align: center;
+}
+
+#menu li{
+	display: inline-block;
+	/* float: left; */
+	margin: 10px;
+	font-weight: 700;
+	font-style: italic;
+}
+
+#menu ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
