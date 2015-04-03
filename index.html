@@ -1,6 +1,18 @@
 <head>
 	<title>Regina Ongowarsito</title>
 	<link href='http://fonts.googleapis.com/css?family=Cambay:400,700italic,700,400italic' rel='stylesheet' type='text/css'>
+	<script>
+		function contactsPullDown(){
+			document.getElementById("contacts-window").style.zIndex = -100;
+			document.getElementById("contacts-window").style.opacity = 0;
+		}
+
+		function contactsPullUp(){
+			document.getElementById("contacts-window").style.zIndex = 100;
+			document.getElementById("contacts-window").style.opacity = 1;
+			/*document.getElementById("swag").innerHTML = "Hello World";*/
+		}
+	</script>
 	<link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
@@ -15,14 +27,7 @@
 				<li><a href="https://github.com/daggerdagr">GITHUB</a></li>
 				<li><a href="https://www.linkedin.com/pub/regina-ongowarsito/9a/b47/9aa/en">LINKEDIN</a></li>
 				<li><a href=# id="swag" onclick="contactsPullUp()">CONTACT</a></li> <!-- onclick="contactsOpen()" -->
-				
-				<script>
-					function contactsPullUp(){
-						document.getElementById("contacts-window").style.zIndex = 100;
-						document.getElementById("contacts-window").style.opacity = 1;
-						/*document.getElementById("swag").innerHTML = "Hello World";*/
-					}
-				</script>
+
 
 			</ul>
 		</div>
@@ -30,17 +35,11 @@
 	<div id="contacts-window">
 		<div id="overlay"></div>
 		<div id="contacts">
-			EMAIL: regina.ongowarsito@gmail.com
+			EMAIL: <a href="mailto:regina.ongowarsito@gmail.com">regina.ongowarsito@gmail.com</a>
 			<br>
-			FACEBOOK: facebook.com/whenwereach88mph
+			FACEBOOK: <a href="facebook.com/whenwereach88mph">facebook.com/whenwereach88mph</a>
 			<br>
 			<a id="contactsCloser" href=# onclick='contactsPullDown()'>(CLOSE)</a>
-				<script>
-					function contactsPullDown(){
-						document.getElementById("contacts-window").style.zIndex = -100;
-						document.getElementById("contacts-window").style.opacity = 0;
-					}
-				</script>
 
 			<!-- <form>
 			Name: <input type="text" name="Name">

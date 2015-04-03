@@ -102,6 +102,6 @@ body {
     position: fixed;
 }
 
-a#contactsCloser {
+#contacts-window a {
     color: black;
 }
