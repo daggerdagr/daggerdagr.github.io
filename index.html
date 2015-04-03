@@ -5,17 +5,49 @@
 </head>
 
 <body>
-<div id="bg-pic"><img src="bw.png"></div>
-<div id="container">
-	<div id="Name">REGINA ONGOWARSITO</div>
-	<!-- <div id="">DAGGERDAGR.GITHUB.IO</div> -->
-	<div id="menu">
-		<ul>
-			<li><a href="https://www.dropbox.com/s/wi6lr33u8dtn8hq/resume_regina_ongowarsito.pdf?dl=0">RESUME</a></li>
-			<li><a href="https://github.com/daggerdagr">GITHUB</a></li>
-			<li><a href="https://www.linkedin.com/pub/regina-ongowarsito/9a/b47/9aa/en">LINKEDIN</a></li>
-			<li>CONTACT</li>
-		</ul>
+	<div id="bg-pic"><img src="bw.png"></div>
+	<div id="container">
+		<div id="Name">REGINA ONGOWARSITO</div>
+		<!-- <div id="">DAGGERDAGR.GITHUB.IO</div> -->
+		<div id="menu">
+			<ul>
+				<li><a href="https://www.dropbox.com/s/wi6lr33u8dtn8hq/resume_regina_ongowarsito.pdf?dl=0">RESUME</a></li>
+				<li><a href="https://github.com/daggerdagr">GITHUB</a></li>
+				<li><a href="https://www.linkedin.com/pub/regina-ongowarsito/9a/b47/9aa/en">LINKEDIN</a></li>
+				<li><a href=# id="swag" onclick="contactsPullUp()">CONTACT</a></li> <!-- onclick="contactsOpen()" -->
+				
+				<script>
+					function contactsPullUp(){
+						document.getElementById("contacts-window").style.zIndex = 100;
+						document.getElementById("contacts-window").style.opacity = 1;
+						/*document.getElementById("swag").innerHTML = "Hello World";*/
+					}
+				</script>
+
+			</ul>
+		</div>
 	</div>
-</div>
+	<div id="contacts-window">
+		<div id="overlay"></div>
+		<div id="contacts">
+			EMAIL: regina.ongowarsito@gmail.com
+			<br>
+			FACEBOOK: facebook.com/whenwereach88mph
+			<br>
+			<a id="contactsCloser" href=# onclick='contactsPullDown()'>(CLOSE)</a>
+				<script>
+					function contactsPullDown(){
+						document.getElementById("contacts-window").style.zIndex = -100;
+						document.getElementById("contacts-window").style.opacity = 0;
+					}
+				</script>
+
+			<!-- <form>
+			Name: <input type="text" name="Name">
+			Email: <input type="text" name="Email">
+			Phone #: <input type="text" name="Phone">
+			Message: <text area
+			 -->
+		</div>
+	</div>
 </body>
