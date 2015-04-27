@@ -1,52 +1,253 @@
 <head>
-	<title>Regina Ongowarsito</title>
-	<link href='http://fonts.googleapis.com/css?family=Cambay:400,700italic,700,400italic' rel='stylesheet' type='text/css'>
-	<script>
-		function contactsPullDown(){
-			document.getElementById("contacts-window").style.zIndex = -100;
-			document.getElementById("contacts-window").style.opacity = 0;
-		}
+	<title>DAYDAGGER</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="assets/js/jquery.waypoints.js"></script>
 
-		function contactsPullUp(){
-			document.getElementById("contacts-window").style.zIndex = 100;
-			document.getElementById("contacts-window").style.opacity = 1;
-			/*document.getElementById("swag").innerHTML = "Hello World";*/
-		}
-	</script>
+	<script src="assets/js/responsiveslides.min.js"></script>
+
+	<script src="assets/js/jquery.easing.1.3.js"></script>
+
+	<!-- 
 	<link rel="stylesheet" type="text/css" href="style.css" />
+	-->
+
+	<link rel="stylesheet" type="text/css" href="style.css" /> 
+
+
+	
+	<link rel="stylesheet" type="text/css" href="rslider.css" />
+	<script src="assets/js/script.js"></script>
+
+	<!-- <script src="assets/js/script_top_bar.js"></script> -->
+
 </head>
 
+
 <body>
-	<div id="bg-pic"><img src="bw.png"></div>
-	<div id="container">
-		<div id="Name">REGINA ONGOWARSITO</div>
-		<!-- <div id="">DAGGERDAGR.GITHUB.IO</div> -->
-		<div id="menu">
-			<ul>
-				<li><a href="https://www.dropbox.com/s/wi6lr33u8dtn8hq/resume_regina_ongowarsito.pdf?dl=0">RESUME</a></li>
-				<li><a href="https://github.com/daggerdagr">GITHUB</a></li>
-				<li><a href="https://www.linkedin.com/pub/regina-ongowarsito/9a/b47/9aa/en">LINKEDIN</a></li>
-				<li><a href=# id="swag" onclick="contactsPullUp()">CONTACT</a></li> <!-- onclick="contactsOpen()" -->
+
+	<div class="se-pre-con"></div>
 
 
+	<div class="menu">
+		<ul>
+			<li id="home">HOME</li>
+			<li id="bio">BIOGRAPHY</li>
+			<li id="projects">PROJECTS</li>
+			<li id="resume">RESUME</li>
+			<li id="contact">CONTACT</li>
+		</ul>
+	</div>
+
+
+
+	<div class="container" id="home">
+		<img src="assets/img/home-bg.png" class="background">
+		<div id="logod"><img src="assets/img/logo.png" id="logo"/></div>
+	</div>
+
+	<div class="container" id="bio">
+		<img src="assets/img/bio-bg.png" class="background">
+		
+
+		<div class="big-content">
+			<ul class="slides" id="bio">
+			  <li><img src="assets/img/bio-1.png" alt=""></li>
+			  <li><img src="assets/img/bio-2.png" alt=""></li>
+			  <li><img src="assets/img/bio-3.png" alt=""></li>
 			</ul>
-		</div>
-	</div>
-	<div id="contacts-window">
-		<div id="overlay"></div>
-		<div id="contacts">
-			EMAIL: <a href="mailto:regina.ongowarsito@gmail.com">regina.ongowarsito@gmail.com</a>
-			<br>
-			FACEBOOK: <a href="facebook.com/whenwereach88mph">facebook.com/whenwereach88mph</a>
-			<br>
-			<a id="contactsCloser" href=# onclick='contactsPullDown()'>(CLOSE)</a>
+			
+			<script>
+			$(function() {
+			    $("#bio.slides").responsiveSlides();
+			  });
+			$(function() {
+				$(".proj-item .slides").responsiveSlides({auto: false});
+			});
+			</script>
 
-			<!-- <form>
-			Name: <input type="text" name="Name">
-			Email: <input type="text" name="Email">
-			Phone #: <input type="text" name="Phone">
-			Message: <text area
-			 -->
+		</div>
+		
+		<div class="boxup">		
+			<p class="sec-headings">BIOGRAPHY</p>
+
+
+			<div class="sec-text">
+				Lorem ipsum dolor sit amet, nostrum dissentias conclusionemque id pri, te homero partiendo democritum ius. Eos ne vero liber dignissim, pro audire legimus detracto te. Instructior definitiones qui eu, doctus oblique reprehendunt vel ei, vidit verear vix ex. Congue liberavisse consequuntur id mei.
+			</div>
+			
 		</div>
 	</div>
+
+	<div class="proj-item-window">
+		<div class="wrapper">
+			<div class="close-window">X</div>
+			<div class="proj-item">
+				<div class="proj-item-pic">
+					<ul class="slides">
+					  <li></li>
+					  <li></li>
+					  <li></li>
+					</ul>
+				</div>
+				<div class="descript"></div>
+<!-- 				<div class="proj-item-pic"><img src="assets/img/test.png"></div>
+				<div class="descript">
+					<p class="title">LOREM IPSUM PROJECT</p>
+					<p class="words"></p>
+					<p class="link"></p>
+					<p class="date"></p>
+				</div> -->
+			</div>
+
+		</div>
+		<div class='background'></div>
+	</div>
+
+
+	<div class="container" id="projects">
+
+		</script>
+		<img src="assets/img/proj-bg.png" class="background">
+
+		<div class="content">
+			<p class="sec-headings">PROJECTS</p>
+			<div class="proj-item" id="one">
+				<div class="proj-item-pic"><div class="overlay"></div><!-- <img src="assets/img/test.png"> -->
+
+							<ul class="slides">
+							  <li><img src="assets/img/proj-1A.jpg" alt=""></li>
+							  <li><img src="assets/img/proj-1B.jpg" alt=""></li>
+							  <li><img src="assets/img/proj-1C.jpg" alt=""></li>
+							</ul>
+							
+				</div>
+				<div class="descript">
+					<p class="title">LOREM IPSUM PROJECT</p>
+					<p class="words">Et nec quidam consequuntur, ridens vivendo scriptorem cu sea. Cum autem doctus propriae ea. Dicat populo his id. Et duo malis doctus quaerendum, ei pro dicunt debitis omittantur. Sit ea autem harum ocurreret, debitis appetere delicata at eos, cu dicant nominati ullamcorper nec. Ei usu mentitum molestie, mea te commodo fierent senserit, usu veritus evertitur intellegam in.</p>
+					<p class="link">(<a href="daggerdagr.github.io">daggerdagr.github.io</a>)</p>
+					<p class="date">2015/04/22</p>
+				</div>
+			
+			</div>
+			
+			<div class="proj-item" id="two">
+				<div class="proj-item-pic"><div class="overlay"></div><!-- <img src="assets/img/test.png"> -->
+
+							<ul class="slides" id="window">
+							  <li><img src="assets/img/proj-2A.jpg" alt=""></li>
+							  <li><img src="assets/img/proj-2B.jpg" alt=""></li>
+							  <li><img src="assets/img/proj-2C.jpg" alt=""></li>
+							</ul>
+							
+				</div>
+				<div class="descript">
+					<p class="title">L. IPSUM PRODUCT</p>
+					<p class="words">Nam agam quidam constituam id, in nec magna fierent. Duis affert epicurei vis an, errem deleniti constituto an nec. Quaestio corrumpit reprehendunt te usu, autem denique verterem nec te. Quo no elitr aliquam nominavi, sint iudico lucilius sit ad. Te mea dicat indoctum assueverit, pri vitae iudico option et, eu ius summo quaestio.</p>
+					<p class="link">(<a href="daggerdagr.github.io">daggerdagr.github.io</a>)</p>
+					<p class="date">2015/04/22</p>
+				</div>
+
+			</div>
+			
+			<div class="proj-item" id="three">
+				<div class="proj-item-pic"><div class="overlay"></div><!-- <img src="assets/img/test.png"> -->
+
+							<ul class="slides" id="window">
+							  <li><img src="assets/img/proj-3A.jpg" alt=""></li>
+							  <li><img src="assets/img/proj-3B.jpeg" alt=""></li>
+							  <li><img src="assets/img/proj-3C.jpg" alt=""></li>
+							</ul>
+
+				</div>
+				<div class="descript">
+					<p class="title">DOLOR SIT AMET PROJECT</p>
+					<p class="words">Te unum munere pri. Eum cu movet reformidans, eu nonumes placerat singulis mel. Nam veri viris saepe ne, vix in meis consequuntur. Mea te salutatus instructior, ex meis postea aeterno eos. Nec ei unum soleat, quo ne alienum volutpat. Usu partem oblique in.</p>
+					<p class="link">(<a href="daggerdagr.github.io">daggerdagr.github.io</a>)</p>
+					<p class="date">2015/04/22</p>
+				</div>
+
+			</div>
+			
+			<div class="proj-item" id="four">
+				<div class="proj-item-pic"><div class="overlay"></div><!-- <img src="assets/img/test.png"> -->
+
+							<ul class="slides" id="window">
+							  <li><img src="assets/img/proj-4A.jpg" alt=""></li>
+							  <li><img src="assets/img/proj-4B.jpg" alt=""></li>
+							  <li><img src="assets/img/proj-4C.jpg" alt=""></li>
+							</ul>
+							
+				</div>
+				<div class="descript">
+					<p class="title">LOREM I. PROJECT</p>
+					<p class="words">Hei malis propriae constituto nam, sea maiorum reprehendunt ut. Eu aperiri insolens qui, his quod integre no. Sea diam denique te, tantas similique ad ius, nemore audiam consequat mei ei. Ei odio tacimates est, choro aliquando adolescens sed ad, sea velit partem consequuntur at.Illud laboramus efficiendi et sea, sed inani veniam iisque te. Et quo labore cetero integre, justo accommodare ne cum. Sed cu aliquid placerat, at sea omittam assueverit, causae singulis an has.</p>
+					<p class="link">(<a href="daggerdagr.github.io">daggerdagr.github.io</a>)</p>
+					<p class="date">2015/04/22</p>
+				</div>
+
+			</div>
+
+			</div>
+
+		</div>
+
+
+	<div class="container" id="resume">
+		<img src="assets/img/resume-bg.png" class="background">
+		
+		<div class="boxup">
+			<p class="sec-headings">RESUME</p>
+		</div>
+
+		<div class="big-content">
+			<!-- <div id="resume-pic"><img src="assets/img/resume.png"></div> -->
+			<div id="resume-dl">(<a href="resume_regina_ongowarsito.pdf" download>download resume</a>)</div>
+		</div>
+	</div>
+
+	<div class="container" id="contact">
+		<img src="assets/img/contact-bg.png" class="background">
+
+		<div class="boxup">
+			<p class="sec-headings">CONTACT</p>
+		</div>
+		<div class="big-content">
+			<div id="contact-form">
+				<form>
+				    <p>
+				        <label for="a">Name:</label>
+				        <input id="a" type="text">
+				    </p>
+				    <p>
+				        <label for="b">Email:</label>
+				        <input id="b" type="text">
+				    </p>
+				    <p>
+				        <label for="b">Phone Number:</label>
+				        <input id="b" type="text">
+				    </p>
+				    <p>
+				        <label for="b" id="message">Message:</label>
+				        <textarea cols="50" rows="4" name="message"></textarea>
+				    </p>
+				</form>
+			</div>
+			<div id="contact-icons">
+				<a href="http://www.facebook.com/whenwereach88mph"><img src="assets/img/fb-icon.png"></a>
+				<a href="https://www.linkedin.com/pub/regina-ongowarsito/9a/b47/9aa/en"><img src="assets/img/linkedin-icon.png"></a>
+				<a href="https://github.com/daggerdagr"><img src="assets/img/ghub-icon.png"></a>
+				<a href="mailto:regina.ongowarsito@gmail.com"><img src="assets/img/email-icon.png"></a>
+			</div>
+			<!-- <form action="contacts.asp">
+			  Name: <input type="text" name="name"><br>
+			  Email: <input type="text" name="email"><br>
+			  Phone Number: <input type="text" name="phone"><br>
+			  Message: <textarea cols="50" rows="4" name="message"></textarea><br>
+			  <input type="submit" value="Submit">
+			</form> -->
+		</div>
+
+	</div>
+
+
 </body>
