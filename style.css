@@ -445,7 +445,7 @@ body.noscroll{
     display: none;
     /* font-family: Californian; */
     /* letter-spacing: 0.2em; */
-    /* font-size: 1vw; */
+    font-size: 0.75vw;
 }
 
 .proj-item-pic img {
