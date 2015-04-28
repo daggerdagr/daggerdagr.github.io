@@ -105,9 +105,9 @@ $('.proj-item').click(function() {
 			y += '<li>'+x[i].innerHTML+'</li>'
 	};
 	$('.proj-item-window ul').html(y);
-	$(function() {
+	setTimeout(	function() {
 		$(".proj-item-window .slides").responsiveSlides();
-	});
+	}, 1000);
 	$('.proj-item-window').slideDown();
 	$('body').addClass('noscroll');
 });
