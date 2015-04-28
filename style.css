@@ -268,7 +268,7 @@ body {
 }
 
 body.noscroll{
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 #resume #resume-dl {
@@ -601,9 +601,9 @@ body.noscroll{
     opacity: 0.7;
 }
 
-/*::-webkit-scrollbar { 
+::-webkit-scrollbar { 
     display: none; 
-}*/
+}
 
 .menu .hover {
     opacity: 1;
