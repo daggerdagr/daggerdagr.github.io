@@ -34,23 +34,23 @@ var menu_activate = function(x){
 }
 
 
-$('.container').waypoint(function(direction) {
+/*$('.container').waypoint(function(direction) {
     console.log($(this))
     console.log(direction)
-  })
+  })*/
 
 $('.container').waypoint(function(direction) {
 	var curr_page = $(this).attr('element').id
 	if (direction === 'down'){
 		menu_activate(curr_page)
-	    console.log(curr_page)
+	    /*console.log(curr_page)*/
   }} , {offset: '50%'})
 
 $('.container').waypoint(function(direction) {
 	var curr_page = $(this).attr('element').id
 	if (direction === 'up'){
 	  	menu_activate(curr_page)
-	    console.log(curr_page)
+	    /*console.log(curr_page)*/
   }} , {offset: '-50%'});
 
 /*$('.container').waypoint(function(direction) {
@@ -73,13 +73,13 @@ $('.container').waypoint(function(direction) {
 $('.menu ul li').click(function() {
 	
 	var corresponding_pg = $(this).attr('id')
-	console.log(corresponding_pg)
+	/*console.log(corresponding_pg)*/
 	if (corresponding_pg == 'resume') {
 		$('html, body').animate({
 	      scrollTop: $('.container#'+corresponding_pg).offset().top - ($('.container').height() / 2)
 	    }, 1500, 'easeInOutCubic')	
 	} else {
-		console.log($('.container#'+corresponding_pg).offset().top)
+		/*console.log($('.container#'+corresponding_pg).offset().top)*/
 		$('html, body').animate({
 	      scrollTop: $('.container#'+corresponding_pg).offset().top
 	    }, 1500, 'easeInOutCubic');
@@ -96,7 +96,7 @@ $('.menu ul li').click(function() {
 $('.proj-item').click(function() {
 	$('.proj-item-window').addClass('active');
 	$('.proj-item-window').css('top', $(window).scrollTop())
-	console.log($(this).attr('id'))
+	/*console.log($(this).attr('id'))*/
 	$('.proj-item-window .proj-item .descript').html($(this).children('.descript').html());
 	
 	var x = $(this).find('li')
@@ -122,8 +122,8 @@ $('.proj-item-window .close-window').click(function() {
 
 $('.content .proj-item').hover(function() {
 	$(this).addClass('hover')
-	console.log($(this).attr('id'))
-	console.log('alsjda')
+	/*console.log($(this).attr('id'))
+	console.log('alsjda')*/
 	/*$("#"+$(this).attr('id') +" .slides").responsiveSlides({auto: true});*/
 }, function() {
 	$(this).removeClass('hover') //broke it here
