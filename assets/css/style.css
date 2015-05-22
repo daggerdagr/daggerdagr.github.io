@@ -1,24 +1,24 @@
 @font-face {
     font-family: Axis;
-    src: url('axis.otf');
+    src: url('../../axis.otf');
 }
 
 @font-face {
     font-family: Californian;
-    src: url('CALIFR.ttf');
+    src: url('../../CALIFR.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: Californian;
-    src: url('CALIFI.ttf');
+    src: url('../../CALIFI.ttf');
     font-weight: normal;
     font-style: italic;
 }
 @font-face {
     font-family: Californian;
-    src: url('CALIFB.ttf');
+    src: url('../../CALIFB.ttf');
     font-weight: bold;
 }
 
@@ -557,7 +557,7 @@ body.noscroll{
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	background: url(assets/img/preloader.gif) center no-repeat #fff;
+	background: url(../img/preloader.gif) center no-repeat #fff;
     background-color: black;
 }
 
