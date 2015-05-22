@@ -107,7 +107,7 @@ $('.proj-item').click(function() {
 	$('.proj-item-window ul').html(y);
 	setTimeout(	function() {
 		$(".proj-item-window .slides").responsiveSlides();
-	}, 1000);
+	}, 300);
 	$('.proj-item-window').slideDown();
 	$('body').addClass('noscroll');
 });
