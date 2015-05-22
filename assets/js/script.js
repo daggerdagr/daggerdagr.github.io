@@ -117,6 +117,7 @@ $('.proj-item-window .close-window').click(function() {
 /*	('.proj-item-window ul').innerHTML = ''*/
 	$('.proj-item-window').slideUp();
 	$('body').removeClass('noscroll');
+	$(".proj-item-window .slides").responsiveSlides({auto: false});
 });
 
 
