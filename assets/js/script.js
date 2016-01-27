@@ -97,10 +97,10 @@ $('.menu ul li').click(function() {
 	}
 });
 
-$('.proj-item').click(function() {
+/*$('.proj-item').click(function() {
 	$('.proj-item-window').addClass('active');
 	$('.proj-item-window').css('top', $(window).scrollTop())
-	/*console.log($(this).attr('id'))*/
+	//console.log($(this).attr('id'))
 	$('.proj-item-window .proj-item .descript').html($(this).children('.descript').html());
 	
 	var x = $(this).find('li')
@@ -114,7 +114,7 @@ $('.proj-item').click(function() {
 	}, 300);
 	$('.proj-item-window').slideDown();
 	$('body').addClass('noscroll');
-});
+});*/
 
 $('.proj-item-window .close-window').click(function() {
 	$('.proj-item-window').removeClass('active');

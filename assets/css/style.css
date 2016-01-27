@@ -271,6 +271,12 @@ body.noscroll{
   /* overflow: hidden; */
 }
 
+.big-content img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 #resume #resume-dl {
     position: relative;
     top: 50%;
