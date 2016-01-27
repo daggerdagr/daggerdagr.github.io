@@ -30,6 +30,12 @@
     /* display: inline-block; */
 }
 
+.big-content #bg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 html {
     margin: 0;
     margin-bottom: 5vh;
